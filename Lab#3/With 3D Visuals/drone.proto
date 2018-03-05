@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Request {
+    string coordinates = 1;
+}
+
+message Response {
+    string coordinates = 1;
+}
+
+service DroneControl {
+    rpc movement(stream Request) returns (stream Response) {}
+    rpc adjust(Request) returns (stream Response) {}
+}
+
