@@ -6,8 +6,9 @@ Prerequisites:
 Instructions:
 
 1. Start the forwarder device by executing - python3 Forwarder.py
-2. Launch client application with registration name as arg - python3 chat_window.py <name>
-3. Multiple clients can be launched and they will participate in a group chat.
+2. Launch client application with registration name as arg - python3 chat_window.py NAME
+3. NAME is the name of client who is joining the chat. Chat client takes the registration name as command line argument.
+4. Multiple clients can be launched and they will participate in a group chat.
 
 Technology stack:
 
