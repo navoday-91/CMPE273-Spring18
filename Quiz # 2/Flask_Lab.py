@@ -49,7 +49,7 @@ def del_name(index):
     global data
     if index in data:
         del data[index]
-    resp = ""
+    resp = jsonify("")
     resp.status_code = 204
     return resp
 
